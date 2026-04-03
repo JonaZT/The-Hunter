@@ -1,4 +1,4 @@
-# 🎯 The Hunter — Job Vacancy Scraper
+#  The Hunter — Job Vacancy Scraper
 
 Automated system built with **Spring Boot + Selenium** that scrapes job boards every 30 minutes, filters relevant vacancies, persists them to avoid duplicates, and sends real-time notifications via **Telegram Bot**.
 
@@ -6,7 +6,7 @@ Built to solve a real problem: automating the search for software internships an
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Multi-source scraping** — OCC Mundial and Computrabajo scraped simultaneously
 - **Smart filtering** — keyword-based engine filters by role, location, and relevance
@@ -16,7 +16,7 @@ Built to solve a real problem: automating the search for software internships an
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -29,7 +29,7 @@ Built to solve a real problem: automating the search for software internships an
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 @Scheduled (every 30 min)
@@ -59,7 +59,7 @@ Built to solve a real problem: automating the search for software internships an
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ### 1. Prerequisites
 
@@ -96,7 +96,7 @@ The scheduler fires automatically. Check your Telegram for alerts.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/main/java/com/example/demo/
@@ -117,7 +117,7 @@ src/main/java/com/example/demo/
 
 ---
 
-## 🔍 How Filtering Works
+##  How Filtering Works
 
 The `FilterEngine` applies three independent rules:
 
@@ -133,7 +133,7 @@ or `México` (country-level, likely remote)
 
 ---
 
-## 📬 Sample Notification
+## Sample Notification
 
 ```
 🎯 Nueva vacante encontrada
@@ -147,7 +147,7 @@ or `México` (country-level, likely remote)
 
 ---
 
-## 🗄️ Database
+## Database
 
 Uses **H2 file-based** database stored locally at `./data/hunterdb.mv.db`.
 
@@ -160,7 +160,7 @@ JDBC URL: `jdbc:h2:file:./data/hunterdb`
 
 ---
 
-## 🔧 Extending to New Sources
+##  Extending to New Sources
 
 Adding a new job board requires only one new method in `ScraperService`:
 
